@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>cli_test.py - CLI_Test</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "cli_test.py";
+        var mkdocs_page_input_path = "api/src/cli_test.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> CLI_Test
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Api</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Bin</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../bin/cli_test/">cli_test.py</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Install</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../install/install/">install.py</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../install/uninstall/">uninstall.py</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Src</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">cli_test.py</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#src.cli_test">cli_test</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#src.cli_test.CNFormatter">CNFormatter</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#src.cli_test.CliTest">CliTest</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#src.cli_test.CliTest.__init__">__init__</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#src.cli_test.CliTest.main">main</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">CLI_Test</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Api</li>
+          <li class="breadcrumb-item">Src</li>
+      <li class="breadcrumb-item active">cli_test.py</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="cli_testpy">cli_test.py</h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="src.cli_test"></a>
+    <div class="doc doc-contents first">
+
+        <p>The main file that runs the program</p>
+<p>This file is executable and can be called from the terminal like:</p>
+<p>foo@bar:~$ cd [path to directory of this file]
+foo@bar:~[path to directory of this file]$ ./cli_test.py [cmd line]</p>
+<p>or if installed in a global location:</p>
+<p>foo@bar:~$ cli_test [cmd line]</p>
+<p>Typical usage is show in the main() method.</p>
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="src.cli_test.CNFormatter" class="doc doc-heading">
+            <code>CNFormatter</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="argparse.RawTextHelpFormatter">RawTextHelpFormatter</span></code>, <code><span title="argparse.RawDescriptionHelpFormatter">RawDescriptionHelpFormatter</span></code></p>
+
+
+        <p>A dummy class to combine multiple argparse formatters</p>
+
+
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+      <th class="field-name">Parameters:</th>
+      <td class="field-body">
+        <ul class="first simple">
+            <li>
+              <b><code>RawTextHelpFormatter</code></b>
+              –
+              <div class="doc-md-description">
+                <p>Maintains whitespace for all sorts of help text,</p>
+              </div>
+            </li>
+            <li>
+              <b><code>RawDescriptionHelpFormatter</code></b>
+              –
+              <div class="doc-md-description">
+                <p>Indicates that description and epilog are</p>
+              </div>
+            </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>        <p>A dummy class to combine multiple argparse formatters.</p>
+
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>src/cli_test.py</code></summary>
+                <pre class="highlight"><code class="language-python">class CNFormatter(
+    argparse.RawTextHelpFormatter, argparse.RawDescriptionHelpFormatter
+):
+    """
+    A dummy class to combine multiple argparse formatters
+
+    Args:
+        RawTextHelpFormatter: Maintains whitespace for all sorts of help text,
+        including argument descriptions.
+        RawDescriptionHelpFormatter: Indicates that description and epilog are
+        already correctly formatted and should not be line-wrapped.
+
+    A dummy class to combine multiple argparse formatters.
+    """</code></pre>
+              </details>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="src.cli_test.CliTest" class="doc doc-heading">
+            <code>CliTest</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+
+        <p>The main class, responsible for the operation of the program</p>
+
+
+<details class="public-methods" open>
+  <summary>Public methods</summary>
+  <p>main: The main method of the program</p>
+</details>        <p>This class does the most of the work of a typical CLI program. It parses
+command line options, loads/saves config files, and performs the operations
+required for the program.</p>
+
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>src/cli_test.py</code></summary>
+                <pre class="highlight"><code class="language-python">class CliTest:
+    """
+    The main class, responsible for the operation of the program
+
+    Public methods:
+        main: The main method of the program
+
+    This class does the most of the work of a typical CLI program. It parses
+    command line options, loads/saves config files, and performs the operations
+    required for the program.
+    """
+
+    # --------------------------------------------------------------------------
+    # Class constants
+    # --------------------------------------------------------------------------
+
+    # --------------------------------------------------------------------------
+    # find path to project
+    P_DIR_PRJ = Path(__file__).parents[1].resolve()
+
+    # --------------------------------------------------------------------------
+
+    # I18N: short description
+    S_PP_SHORT_DESC = _("Short description")
+
+    # version string
+    S_PP_VERSION = "0.0.0"
+
+    # config option strings
+    S_ARG_CFG_OPTION = "-c"
+    S_ARG_CFG_DEST = "CFG_DEST"
+    # I18N: config file option help
+    S_ARG_CFG_HELP = _("load configuration from file")
+    # I18N: config file dest
+    S_ARG_CFG_METAVAR = _("FILE")
+
+    # debug option strings
+    S_ARG_DBG_OPTION = "-d"
+    S_ARG_DBG_ACTION = "store_true"
+    S_ARG_DBG_DEST = "DBG_DEST"
+    # I18N: debug mode help
+    S_ARG_DBG_HELP = _("enable debugging mode")
+
+    # config option strings
+    S_ARG_HLP_OPTION = "-h"
+    S_ARG_HLP_ACTION = "store_true"
+    S_ARG_HLP_DEST = "HLP_DEST"
+    # I18N: help option help
+    S_ARG_HLP_HELP = _("show this help message and exit")
+
+    # about string
+    S_ABOUT = (
+        "\n"
+        "CLI_Test\n"
+        f"{S_PP_SHORT_DESC}\n"
+        f"{S_PP_VERSION}\n"
+        "https://github.com/cyclopticnerve/CLI_Test\n"
+    )
+
+    # I18N if using argparse, add help at end of about
+    S_ABOUT_HELP = _("Use -h for help") + "\n"
+
+    # path to default config file
+    P_CFG_DEF = Path("conf/cli_test.json")
+
+    # --------------------------------------------------------------------------
+    # Instance methods
+    # --------------------------------------------------------------------------
+
+    # --------------------------------------------------------------------------
+    # Initialize the new object
+    # --------------------------------------------------------------------------
+    def __init__(self):
+        """
+        Initialize the new object
+
+        Initializes a new instance of the class, setting the default values
+        of its properties, and any other code that needs to run to create a
+        new object.
+        """
+
+        # set defaults
+
+        # cmd line args
+        self._dict_args = {}
+        self._debug = False
+        self._path_cfg_arg = None
+
+        # the final cfg path and dict
+        self._path_cfg = None
+        self._dict_cfg = {}
+
+    # --------------------------------------------------------------------------
+    # Public methods
+    # --------------------------------------------------------------------------
+
+    # --------------------------------------------------------------------------
+    # The main method of the program
+    # --------------------------------------------------------------------------
+    def main(self):
+        """
+        The main method of the program
+
+        This method is the main entry point for the program, initializing the
+        program, and performing its steps.
+        """
+
+        # ----------------------------------------------------------------------
+        # setup
+
+        # call boilerplate code
+        self._setup()
+
+        # ----------------------------------------------------------------------
+        # main stuff
+
+        # do the thing with the thing
+        print(self._func())
+
+        # ----------------------------------------------------------------------
+        # teardown
+
+        # call boilerplate code
+        self._teardown()
+
+    # --------------------------------------------------------------------------
+    # Private methods
+    # --------------------------------------------------------------------------
+
+    # --------------------------------------------------------------------------
+    # Short description
+    # --------------------------------------------------------------------------
+    def _func(self):
+        """
+        Short description
+
+        Args:
+            var_name: Short description
+
+        Returns:
+            Description
+
+        Raises:
+            exception_type(vars): Description
+
+        Long description (including HTML).
+        """
+
+        # check for debug flag
+        if self._debug:
+            # I18N: context for this string
+            return _("this is func (DEBUG)")
+
+        # no debug, return normal result
+        # I18N: context for this string
+        return _("this is func")
+
+    # --------------------------------------------------------------------------
+    # Boilerplate to use at the start of main
+    # --------------------------------------------------------------------------
+    def _setup(self):
+        """
+        Boilerplate to use at the start of main
+
+        Perform some mundane stuff like running the arg parser and loading
+        config files.
+        """
+
+        # print default about text
+        print(self.S_ABOUT)
+
+        # ----------------------------------------------------------------------
+        # use cmd line
+
+        # create a parser object in case we need it
+        parser = argparse.ArgumentParser(
+            formatter_class=CNFormatter, add_help=False
+        )
+
+        # add help text to about block
+        print(self.S_ABOUT_HELP)
+
+        # add help option
+        parser.add_argument(
+            self.S_ARG_HLP_OPTION,
+            action=self.S_ARG_HLP_ACTION,
+            dest=self.S_ARG_HLP_DEST,
+            help=self.S_ARG_HLP_HELP,
+        )
+
+        # add debug option
+        parser.add_argument(
+            self.S_ARG_DBG_OPTION,
+            action=self.S_ARG_DBG_ACTION,
+            dest=self.S_ARG_DBG_DEST,
+            help=self.S_ARG_DBG_HELP,
+        )
+
+        # add cfg option
+        parser.add_argument(
+            self.S_ARG_CFG_OPTION,
+            dest=self.S_ARG_CFG_DEST,
+            help=self.S_ARG_CFG_HELP,
+            metavar=self.S_ARG_CFG_METAVAR,
+        )
+
+        # run the parser
+        args = parser.parse_args()
+        self._dict_args = vars(args)
+
+        # if -h passed, this will print and exit
+        if self._dict_args.get(self.S_ARG_HLP_DEST, False):
+            parser.print_help()
+            print()
+            sys.exit()
+
+        # set props from args
+        self._debug = self._dict_args.get(self.S_ARG_DBG_DEST, self._debug)
+        self._path_cfg_arg = self._dict_args.get(
+            self.S_ARG_CFG_DEST, self._path_cfg_arg
+        )
+
+        # ----------------------------------------------------------------------
+        # use cfg
+
+        # fix paths and get cfg to load
+        self._get_path_cfg()
+
+        # load config file (or not, if no param and not using -c)
+        self._load_config()
+
+    # --------------------------------------------------------------------------
+    # Boilerplate to use at the end of main
+    # --------------------------------------------------------------------------
+    def _teardown(self):
+        """
+        Boilerplate to use at the end of main
+
+        Perform some mundane stuff like saving config files.
+        """
+
+        # ----------------------------------------------------------------------
+        # use cfg
+
+        # call to save config
+        self._save_config()
+
+    # --------------------------------------------------------------------------
+    # Get path to config file from cmd line option or default
+    # --------------------------------------------------------------------------
+    def _get_path_cfg(self):
+        """
+        Get path to config file from cmd line option or default
+
+        This method figures the config path from either:
+        1. the command line -c option (if present)
+        or
+        2. the self.P_CFG_DEF value (if present)
+
+        If you use the -c option, and the file exists, it will used as the
+        _path_cfg property, and processing stops.
+        If you do not use the -c option, or it is not present on the command
+        line, the path_def value will be used.
+        If you use neither, nothing happens to the _path_cfg property.
+        """
+
+        # accept path or str
+        path_def = self.P_CFG_DEF
+        if path_def:
+            path_def = Path(path_def)
+            if not path_def.is_absolute():
+                # make abs rel to self
+                path_def = self.P_DIR_PRJ / path_def
+
+        # accept path or str
+        if self._path_cfg_arg:
+            self._path_cfg_arg = Path(self._path_cfg_arg)
+            if not self._path_cfg_arg.is_absolute():
+                # make abs rel to self
+                self._path_cfg_arg = self.P_DIR_PRJ / self._path_cfg_arg
+
+        # ----------------------------------------------------------------------
+
+        # assume def
+        if path_def:
+            self._path_cfg = path_def
+
+        # arg supersedes def
+        if self._path_cfg_arg:
+            self._path_cfg = self._path_cfg_arg
+
+    # --------------------------------------------------------------------------
+    # Load config data from a file
+    # --------------------------------------------------------------------------
+    def _load_config(self):
+        """
+        Load config data from a file
+
+        This method loads data from a config file. It is written to load a dict
+        from a json file, but it can be used for other formats as well. It uses
+        the values of self._dict_cfg and self._path_cfg to load the config
+        data.
+        """
+
+        # if one or the other, load it
+        if self._path_cfg and self._path_cfg.exists():
+            self._dict_cfg = F.load_dicts([self._path_cfg], self._dict_cfg)
+
+        # throw in a debug test
+        if self._debug:
+            print("load cfg from:", self._path_cfg)
+            F.pp(self._dict_cfg, label="load cfg")
+
+    # --------------------------------------------------------------------------
+    # Save config data to a file
+    # --------------------------------------------------------------------------
+    def _save_config(self):
+        """
+        Save config data to a file
+
+        This method saves the config data to the same file it was loaded from.
+        It is written to save a dict to a json file, but it can be used for
+        other formats as well. It uses the values of self._dict_cfg and
+        self._path_cfg to save the config data.
+        """
+
+        # save dict to path
+        if self._path_cfg:
+            self._path_cfg.parent.mkdir(parents=True, exist_ok=True)
+            F.save_dict(self._dict_cfg, [self._path_cfg])
+
+        # throw in a debug test
+        if self._debug:
+            print("save cfg to:", self._path_cfg)
+            F.pp(self._dict_cfg, label="save cfg")</code></pre>
+              </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="src.cli_test.CliTest.__init__" class="doc doc-heading">
+            <code class="highlight language-python">__init__()</code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Initialize the new object</p>
+<p>Initializes a new instance of the class, setting the default values
+of its properties, and any other code that needs to run to create a
+new object.</p>
+
+
+            <details class="quote">
+              <summary>Source code in <code>src/cli_test.py</code></summary>
+              <pre class="highlight"><code class="language-python">def __init__(self):
+    """
+    Initialize the new object
+
+    Initializes a new instance of the class, setting the default values
+    of its properties, and any other code that needs to run to create a
+    new object.
+    """
+
+    # set defaults
+
+    # cmd line args
+    self._dict_args = {}
+    self._debug = False
+    self._path_cfg_arg = None
+
+    # the final cfg path and dict
+    self._path_cfg = None
+    self._dict_cfg = {}</code></pre>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="src.cli_test.CliTest.main" class="doc doc-heading">
+            <code class="highlight language-python">main()</code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The main method of the program</p>
+<p>This method is the main entry point for the program, initializing the
+program, and performing its steps.</p>
+
+
+            <details class="quote">
+              <summary>Source code in <code>src/cli_test.py</code></summary>
+              <pre class="highlight"><code class="language-python">def main(self):
+    """
+    The main method of the program
+
+    This method is the main entry point for the program, initializing the
+    program, and performing its steps.
+    """
+
+    # ----------------------------------------------------------------------
+    # setup
+
+    # call boilerplate code
+    self._setup()
+
+    # ----------------------------------------------------------------------
+    # main stuff
+
+    # do the thing with the thing
+    print(self._func())
+
+    # ----------------------------------------------------------------------
+    # teardown
+
+    # call boilerplate code
+    self._teardown()</code></pre>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../install/uninstall/" class="btn btn-neutral float-left" title="uninstall.py"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../install/uninstall/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

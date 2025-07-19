@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>cli_test.py - CLI_Test</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "cli_test.py";
+        var mkdocs_page_input_path = "api/bin/cli_test.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> CLI_Test
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Api</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Bin</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">cli_test.py</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#bin.cli_test">cli_test</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bin.cli_test.CliTest">CliTest</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#bin.cli_test.CliTest.main">main</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Install</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../install/install/">install.py</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../install/uninstall/">uninstall.py</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Src</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../src/cli_test/">cli_test.py</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">CLI_Test</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Api</li>
+          <li class="breadcrumb-item">Bin</li>
+      <li class="breadcrumb-item active">cli_test.py</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="cli_testpy">cli_test.py</h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="bin.cli_test"></a>
+    <div class="doc doc-contents first">
+
+        <p>The main file that runs the program</p>
+<p>This file is executable and can be called from the terminal like:</p>
+<p>foo@bar:~$ cli_test [cmd line]</p>
+<p>when placed in a folder that is in the default $PATH, ie:
+/usr/bin
+~/.local/bin
+etc.</p>
+<p>(The extension will be removed by the installer)</p>
+<p>All command line options will be passed to the main class, usually located at
+~/.local/share/cli_test/src/cli_test.py.</p>
+<p>Typical usage is show in the main() method.</p>
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="bin.cli_test.CliTest" class="doc doc-heading">
+            <code>CliTest</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+
+        <p>The entry point class, responsible for launching the program</p>
+
+
+<details class="public-methods" open>
+  <summary>Public methods</summary>
+  <p>main: The main method of the program</p>
+</details>        <p>This class starts the program from the command line when it is installed in
+directories that are defined in the $PATH variable. These are places like
+/usr/bin, ~/.local/bin, etc. and can be called from the command line
+regardless of the current working directory. It is basically a "bootstrap"
+file, activating the venv and calling the main program.</p>
+
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>bin/cli_test.py</code></summary>
+                <pre class="highlight"><code class="language-python">class CliTest:
+    """
+    The entry point class, responsible for launching the program
+
+    Public methods:
+        main: The main method of the program
+
+    This class starts the program from the command line when it is installed in
+    directories that are defined in the $PATH variable. These are places like
+    /usr/bin, ~/.local/bin, etc. and can be called from the command line
+    regardless of the current working directory. It is basically a "bootstrap"
+    file, activating the venv and calling the main program.
+    """
+
+    # --------------------------------------------------------------------------
+    # Class constants
+    # --------------------------------------------------------------------------
+
+    # find path to prj/lib
+    P_DIR_PRJ = Path.home() / ".local/share/cli_test"
+
+    # commands to run
+    S_CMD_ACTIVATE = ". .venv-cli_test/bin/activate"
+    S_CMD_RUN = "./src/cli_test.py"
+    S_CMD_RUN_ARGS = "{} {}"
+
+    # --------------------------------------------------------------------------
+    # Public methods
+    # --------------------------------------------------------------------------
+
+    # --------------------------------------------------------------------------
+    # The main method of the program
+    # --------------------------------------------------------------------------
+    def main(self):
+        """
+        The main method of the program
+
+        This method is the main entry point for the program, initializing the
+        program, and performing its steps.
+
+        It then calls the real main module, located in the install dir.
+        """
+
+        # ----------------------------------------------------------------------
+
+        # get args
+        args = sys.argv
+
+        # remove our path
+        args = args[1:]
+
+        # quote any args with spaces
+        args = [f'"{item}"' if " " in item else item for item in args]
+
+        # put args back together with spaces
+        args = " ".join(args)
+
+        # def cmd line - no args
+        src_run = self.S_CMD_RUN
+
+        # add args if present
+        if len(args) &gt; 0:
+            src_run = self.S_CMD_RUN_ARGS.format(self.S_CMD_RUN, args)
+
+        # ----------------------------------------------------------------------
+
+        # build cmd
+        cmd = (
+            # cd to inst
+            f"cd {self.P_DIR_PRJ};"
+            # activate venv
+            f"{self.S_CMD_ACTIVATE};"
+            # call src w/ args
+            f"{src_run}"
+        )
+
+        # run cmd
+        try:
+            subprocess.run(cmd, shell=True, check=True)
+        except subprocess.CalledProcessError:
+            print("error")</code></pre>
+              </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="bin.cli_test.CliTest.main" class="doc doc-heading">
+            <code class="highlight language-python">main()</code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The main method of the program</p>
+<p>This method is the main entry point for the program, initializing the
+program, and performing its steps.</p>
+<p>It then calls the real main module, located in the install dir.</p>
+
+
+            <details class="quote">
+              <summary>Source code in <code>bin/cli_test.py</code></summary>
+              <pre class="highlight"><code class="language-python">def main(self):
+    """
+    The main method of the program
+
+    This method is the main entry point for the program, initializing the
+    program, and performing its steps.
+
+    It then calls the real main module, located in the install dir.
+    """
+
+    # ----------------------------------------------------------------------
+
+    # get args
+    args = sys.argv
+
+    # remove our path
+    args = args[1:]
+
+    # quote any args with spaces
+    args = [f'"{item}"' if " " in item else item for item in args]
+
+    # put args back together with spaces
+    args = " ".join(args)
+
+    # def cmd line - no args
+    src_run = self.S_CMD_RUN
+
+    # add args if present
+    if len(args) &gt; 0:
+        src_run = self.S_CMD_RUN_ARGS.format(self.S_CMD_RUN, args)
+
+    # ----------------------------------------------------------------------
+
+    # build cmd
+    cmd = (
+        # cd to inst
+        f"cd {self.P_DIR_PRJ};"
+        # activate venv
+        f"{self.S_CMD_ACTIVATE};"
+        # call src w/ args
+        f"{src_run}"
+    )
+
+    # run cmd
+    try:
+        subprocess.run(cmd, shell=True, check=True)
+    except subprocess.CalledProcessError:
+        print("error")</code></pre>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../install/install/" class="btn btn-neutral float-right" title="install.py">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../install/install/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
