@@ -1,0 +1,5 @@
+site_name: CLI_Test
+theme: readthedocs
+plugins:
+- search
+- mkdocstrings
