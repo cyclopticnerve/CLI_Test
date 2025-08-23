@@ -1,0 +1,5 @@
+site_name: CLI Test
+theme: 
+plugins:
+- search
+- mkdocstrings
