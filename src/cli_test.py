@@ -93,7 +93,7 @@ class CliTest:
     S_PP_SHORT_DESC = "Short description"
 
     # version string
-    S_PP_VERSION = "0.0.0"
+    S_PP_VERSION = "0.0.1"
 
     # config option strings
     S_ARG_CFG_OPTION = "-c"

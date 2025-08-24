@@ -1,6 +1,6 @@
 {
     "INST_NAME": "CLI_Test",
-    "INST_VER": "0.0.0",
+    "INST_VER": "0.0.1",
     "INST_CONT": [
         ".local/share/cli_test",
         ".local/bin/cli_test"

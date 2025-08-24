@@ -119,7 +119,7 @@ class CNInstall:
     S_PP_SHORT_DESC = "Short description"
 
     # version string
-    S_PP_VERSION = "0.0.0"
+    S_PP_VERSION = "0.0.1"
 
     # debug option strings
     S_ARG_DRY_OPTION = "-d"

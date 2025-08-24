@@ -7,9 +7,19 @@
    ├─ [] conf/
    │     └─ [] cli_test.json
    ├─ [] dist/
-   │     └─ [] ABOUT
+   │     └─ [] cli_test-0.0.1-rc1.tar.gz
    ├─ [] docs/
-   │     └─ [] ABOUT
+   │     ├─ [] API/
+   │     │     ├─ [] bin/
+   │     │     │     └─ [] cli_test.md
+   │     │     ├─ [] install/
+   │     │     │     ├─ [] install.md
+   │     │     │     └─ [] uninstall.md
+   │     │     └─ [] src/
+   │     │           └─ [] cli_test.md
+   │     ├─ [] img/
+   │     │     └─ [] cli_test.png
+   │     └─ [] index.md
    ├─ [] i18n/
    │     ├─ [] locale/
    │     │     └─ [] en/
@@ -51,6 +61,57 @@
    │     │     ├─ [] ABOUT
    │     │     └─ [] private.json
    │     └─ [] project.json
+   ├─ [] site/
+   │     ├─ [] API/
+   │     │     ├─ [] bin/
+   │     │     │     └─ [] cli_test/
+   │     │     │           └─ [] index.html
+   │     │     ├─ [] install/
+   │     │     │     ├─ [] install/
+   │     │     │     │     └─ [] index.html
+   │     │     │     └─ [] uninstall/
+   │     │     │           └─ [] index.html
+   │     │     └─ [] src/
+   │     │           └─ [] cli_test/
+   │     │                 └─ [] index.html
+   │     ├─ [] assets/
+   │     │     └─ [] _mkdocstrings.css
+   │     ├─ [] css/
+   │     │     ├─ [] base.css
+   │     │     ├─ [] bootstrap.min.css
+   │     │     ├─ [] bootstrap.min.css.map
+   │     │     ├─ [] brands.min.css
+   │     │     ├─ [] fontawesome.min.css
+   │     │     ├─ [] solid.min.css
+   │     │     └─ [] v4-font-face.min.css
+   │     ├─ [] img/
+   │     │     ├─ [] cli_test.png
+   │     │     ├─ [] favicon.ico
+   │     │     └─ [] grid.png
+   │     ├─ [] js/
+   │     │     ├─ [] base.js
+   │     │     ├─ [] bootstrap.bundle.min.js
+   │     │     ├─ [] bootstrap.bundle.min.js.map
+   │     │     └─ [] darkmode.js
+   │     ├─ [] search/
+   │     │     ├─ [] lunr.js
+   │     │     ├─ [] main.js
+   │     │     ├─ [] search_index.json
+   │     │     └─ [] worker.js
+   │     ├─ [] webfonts/
+   │     │     ├─ [] fa-brands-400.ttf
+   │     │     ├─ [] fa-brands-400.woff2
+   │     │     ├─ [] fa-regular-400.ttf
+   │     │     ├─ [] fa-regular-400.woff2
+   │     │     ├─ [] fa-solid-900.ttf
+   │     │     ├─ [] fa-solid-900.woff2
+   │     │     ├─ [] fa-v4compatibility.ttf
+   │     │     └─ [] fa-v4compatibility.woff2
+   │     ├─ [] 404.html
+   │     ├─ [] index.html
+   │     ├─ [] objects.inv
+   │     ├─ [] sitemap.xml
+   │     └─ [] sitemap.xml.gz
    ├─ [] src/
    │     ├─ [] ABOUT
    │     └─ [] cli_test.py
@@ -60,6 +121,7 @@
    │     └─ [] ABOUT
    ├─ [] .gitignore
    ├─ [] LICENSE.txt
+   ├─ [] mkdocs.yml
    ├─ [] pyproject.toml
    ├─ [] README.md
    └─ [] requirements.txt
